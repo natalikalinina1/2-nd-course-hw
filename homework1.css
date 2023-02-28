@@ -1,0 +1,127 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font-family: inherit;
+}
+.a {
+    text-decoration: none;
+  }
+  
+.body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #000000;
+  } 
+.center{
+    padding-left: calc(50% - 540px);
+    padding-right: calc(50% - 540px); 
+}
+.top {
+    height: 1024px;
+    background-image: url(img/Rectangle\ 1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+.top__title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    color: #FFFFFF;  
+}
+.top__text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+    padding-top: 32px;
+}
+.top__content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 217px;     
+}
+.button {
+    margin-top: 44px;
+    background: #9C0332;
+    box-sizing: border-box;
+    border-radius: 30px;
+    width: 234.06px;
+    height: 48.6px;;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    transition: all 1s;
+  } 
+.button:hover {
+    background: #000000;
+    color: #FFFFFF;
+  }
+.link {
+    text-decoration-line: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 1s;
+}
+.link:hover {
+    text-decoration: underline;
+  }
+.product {
+    margin-top: 32px;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;    
+    margin-top: 128px;
+    margin-bottom: 128px;
+    background-color: #000000;
+}
+.product__item {
+    grid-column: span 1;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    padding-left: 32px;
+    padding-bottom: 32px ;
+    border-radius: 16px;
+    transition: all 0.3s;
+}
+.product__item:hover {
+    scale: 1.05;
+  }
+
+.product__item_1 {
+    background-image: url(img/Rectangle\ 6.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+
+.product__item_2 {
+    background-image: url(img/Rectangle\ 7.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+
+}
+.product__item_3 {
+    background-image: url(img/Rectangle\ 8.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+.bg {
+     background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(0001.jpg);
+}
+  
+
