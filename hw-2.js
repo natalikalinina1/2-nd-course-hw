@@ -4,8 +4,8 @@ alert (a);
 alert(a=20);
 
 // задание 2:
-let firstiPhone = Number(2007);
-alert (firstiPhone);
+let iphone1ReleaseYear = 2007;
+alert (iphone1ReleaseYear);
 
 // задание 3:
 let javascriptcreator = 'Brendan Eich';
