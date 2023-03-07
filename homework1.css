@@ -123,5 +123,50 @@
 .bg {
      background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(0001.jpg);
 }
-  
+@media (max-width:757px) {
+
+.center {
+          padding-left: 16px;
+          padding-right: 16px; 
+  }
+
+.top__title {
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 39px; 
+  }
+.top__content {
+          align-items: center;
+          text-align: center;
+          padding-top: 239px;
+  }
+.top__text {
+          font-style: normal;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 22px;
+}
+.button {
+          margin-top: 33px;
+}
+.product {
+         grid-template-columns: repeat(1, 1fr);
+}
+}
+@media (min-width:758px) and  (max-width:833px){
+
+  .center {
+         padding-left: 16px;
+         padding-right: 16px; 
+}
+.top__content {
+        align-items: center;
+        text-align: center;
+        padding-top: 239px;
+
+}
+}
+
+
+
 
