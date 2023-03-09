@@ -6,16 +6,14 @@ else { alert (password +' введен неправильно');}
 
 //Задание 2:
 let c = 4; 
-if (c > 0 && c < 10) 
+if (c >= 0 && c <= 10) 
 {console.log ('Верно');} 
-else if (c === 0 && c === 10)   
-{ console.log ('Равно');}
 else {console.log ('Неверно');}
 
 //Задание 3:
 let d = 5;
 let y = 105;
-(d > 100 || y > 100) ? console.log('Верно') : console.log('Неверно');
+console.log (d > 100 || y > 100 ? 'Верно' : 'Неверно');
 
 //Задание 4:
 let a = 2;
@@ -57,7 +55,7 @@ break;
 
 // Задание 7 :
 let x = prompt ('Пожалуйста, введите любое число'); 
-if (isNaN(x)) { alert (NaN); }
+if (isNaN(x)) { alert ('Это не число'); }
 else { alert(x); } 
 if (x = (x % 2 === 0)) {alert ('Число четное');}
 else {alert ('Число нечетное');} 
