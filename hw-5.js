@@ -8,6 +8,7 @@ else {
 }
 console.log (min (8, 4));
 console.log (min (6, 6));
+// можно сократить пример:const comparison = (a, b) => a <= b ? a : b;
 
 //Задание 2:
 let c = Number (prompt ('Введите число'));
@@ -47,7 +48,7 @@ function square (e){
 let age = prompt('Сколько Вам лет?');
 let printMessage;
 
-if (age < 0) {
+if (age < 0 || (isNaN(age))) {
 
     printMessage = function () {
         alert('Вы введи неправильное значение!');
