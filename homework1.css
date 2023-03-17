@@ -121,15 +121,59 @@
     height: 300px;
 }
 .bg {
-     background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(0001.jpg);
+     background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%);
 }
-@media (max-width:757px) {
+.game__content {
+    margin-top: 282px;
+    display: flex;
+    justify-content: space-between;
+}
+.game__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+}
+.game__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  padding-top: 32px;
+}
+.game__button {
+  margin-top: 32px;
+  background: #9C0332;
+  box-sizing: border-box;
+  border-radius: 30px;
+  width: 234.06px;
+  height: 48.6px;;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  transition: all 1s;
+  margin-bottom: 282px;
+} 
+.game__button:hover {
+  background: #000000;
+  color: #FFFFFF;
+}
+.game__svg {
+  margin-top: -33px;
+}
+.img__game {
+  width: 485px;
+  height: 333px;
+}
 
-.center {
-          padding-left: 16px;
-          padding-right: 16px; 
-  }
 
+
+@media (min-width:342px) and (max-width:757px) {
+
+.top {
+          height: 735px;
+}
 .top__title {
           font-weight: 700;
           font-size: 32px;
@@ -138,7 +182,7 @@
 .top__content {
           align-items: center;
           text-align: center;
-          padding-top: 239px;
+          padding-top: 238px;
   }
 .top__text {
           font-style: normal;
@@ -151,8 +195,45 @@
 }
 .product {
          grid-template-columns: repeat(1, 1fr);
+         padding-left: 16px;
+         padding-right: 16px; 
+         
 }
+.game__content{
+         margin-top: 51px;
+         margin-bottom: 85px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         text-align: center;
+         padding-left: 16px;
+         padding-right: 16px;
+         
 }
+.game__title {
+         font-weight: 700;
+         font-size: 32px;
+         line-height: 39px;
+
+}
+.game__text {
+         font-style: normal;
+         font-weight: 300;
+         font-size: 14px;
+         line-height: 22px;
+}
+.img__game {
+         width: 344px;
+         height: 236px;
+
+}
+.game__button {
+         margin-bottom: 64px;
+}
+
+}
+
+
 @media (min-width:758px) and  (max-width:833px){
 
   .center {
@@ -160,11 +241,12 @@
          padding-right: 16px; 
 }
 .top__content {
-        align-items: center;
-        text-align: center;
-        padding-top: 239px;
+         align-items: center;
+         text-align: center;
+         padding-top: 239px;
 
 }
+
 }
 
 
