@@ -63,15 +63,15 @@ let resultRrr = [].concat(...rrr);
 console.log(resultRrr);
 
 //Задание 10:
+
 const arr = [1,2,3,4,5];
-for (let i = 0; i < arr.length; i++) {
-  console.log(arr[i]); //перебор массива
-}
-const arrSum = [];
-const arrLength = arr.reduce((start, value, index) => {
-return arrSum[index] = start + value;
-},0);
-console.log (arrSum);//сложение элементов
+for (let i = 0; i < arr.length-1; i++) {;
+  if(i < 5) {
+    console.log (arr[i] + arr[i+1]);
+  } else {
+    console.log (arr[i]);
+  }
+};
 
  // Задание 11:
  let array = [2, 4, 6]; 
@@ -83,16 +83,16 @@ let strok = 'слово длинное предложение буква';
 strok = strok.split(' ');
 console.log (strok);
 
-//Задание 13:
+//Задание версия 13.1:
 
 const pos = [3,-5,8,-2,9,-10];
 const neg = pos.filter(el =>el < 0);
 console.log (neg);
 
-// версия2: 
-//let  positively = [1,2,3,5];
-//let negative = positively.map(item => item *(-1 ));
-//console.log( negative ); 
+// версия 13.2: 
+let  positively = [1,2,3,5];
+let negative = positively.map(item => item *(-1 ));
+console.log( negative ); 
 
 
 
