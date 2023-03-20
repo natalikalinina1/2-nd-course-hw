@@ -1,16 +1,14 @@
 //Задание 1:
 const numbs = [1, 5, 4, 10, 0, 3];
 for (let i = 0; i < numbs.length; i++) {
-	if (numbs[i] == 10) break;
 	console.log(numbs[i]);
-}
+  if (numbs[i] == 10) break;
+};
 
 //Задание 2:
 const n = [2, 4, 5, 6, 8];
-n.forEach((el,index) => {
-    if (el == 4) {console.log(`${index}:${el}`);
-    }    
-});
+console.log (n.indexOf(4));
+
 
 //Задание 3:
 let xxx = [1, 3, 5, 10, 20];
@@ -59,8 +57,7 @@ console.log(line);
 
 //Задание 9:
 let rrr = [[1, 2, 3], [4, 5, 6]];
-let resultRrr = [].concat(...rrr);
-console.log(resultRrr);
+console.log (rrr.flat());
 
 //Задание 10:
 
@@ -88,11 +85,5 @@ console.log (strok);
 const pos = [3,-5,8,-2,9,-10];
 const neg = pos.filter(el =>el < 0);
 console.log (neg);
-
-// версия 13.2: 
-let  positively = [1,2,3,5];
-let negative = positively.map(item => item *(-1 ));
-console.log( negative ); 
-
 
 
