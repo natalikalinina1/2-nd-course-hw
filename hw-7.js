@@ -3,13 +3,16 @@ console.log('здравствуйте!'.toUpperCase());
 
 
 //Задание 2 :
-const searchStart = ['Коробка','балкон', 'коррупция', 'Mонитор', 'корреспонденция', 'колбаса' ];
-const search = 'кор';
-searchStart.forEach((searchStart) => {
-    if (searchStart.toLowerCase().includes(search.toLowerCase()))  { 
-       console.log (searchStart.split());
-}
+function searchStart (arr, search) {
+  let result = [];
+  arr.forEach((item) => {
+    if(item.toLowerCase().startsWith(search.toLowerCase())){
+      result.push(item);
+    }
 });
+return result;
+}
+console.log (searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко')); 
 
 //Задание 3:
 console.log(Math.floor(32.58884));
@@ -33,8 +36,8 @@ function randomInteger(min, max) {
 
 //Задание 6 
 let ywe = Number(prompt ('Введите число'));
-function getRandomArrNumbers (lenght = ywe/2) {
-  return Array.from (Array(lenght),() => Math.floor(Math.random()*ywe)+1);
+function getRandomArrNumbers (lenght = Math.floor(ywe/2)) {
+  return Array.from(Array(lenght),() => Math.floor(Math.random()*ywe)+1);
 }
 const randomarr = getRandomArrNumbers();
 console.log(randomarr);
@@ -45,7 +48,7 @@ let min = Number( prompt('Введите первое число'));
 let max = Number(prompt('Введите второе число'));
    
     let result = function (min,max) {
-      if (isNaN(min,max)) {
+      if (isNaN(min) || isNaN(max)) {
         console.log('Одно или оба значения не являются числом');
       }
       else { let zxc = min + Math.random() * (max + 1 - min);
@@ -95,7 +98,7 @@ function GameTextButtonWords() {
   alert (fructsi);
 
   const answerUser = prompt('Чему равнялся первый элемент массива');
-  const answer = 'Яблоко'; 
+  const answer = fructsi[0]; 
 
   if (answerUser.toLowerCase() === answer.toLowerCase()) {
     alert('Вы близки к победе!');
@@ -104,7 +107,7 @@ function GameTextButtonWords() {
   }
 
   let answerUser2 = prompt('Чему равнялся последний элемент массива');
-  const answer2 = 'Мандарин';
+  const answer2 = fructsi[6];
 
   if ((answerUser.toLowerCase() === answer.toLowerCase()) && (answerUser2.toLowerCase() === answer2.toLowerCase() )) {
     alert('Вы победитель!');}
@@ -116,3 +119,7 @@ function GameTextButtonWords() {
     alert(`Не угадал, правильный ответ: ${answer2}`); 
   }
 }
+;
+
+
+
