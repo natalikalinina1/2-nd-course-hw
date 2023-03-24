@@ -24,8 +24,8 @@ function firstFunc(arr, callback){
 
 	console.log(firstFunc([10, 20, 30], sum));
 
-
-//Задание2:
+	
+//Заданиe 2:
 const users = [
 	{name: 'Jon', age: 22},
 	{name: 'Richard', age: 18},
