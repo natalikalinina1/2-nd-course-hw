@@ -166,6 +166,19 @@
   width: 485px;
   height: 333px;
 }
+.game__words__svg{
+  margin-top: -33px;
+}
+.img__game__words{
+  width: 481px;
+  height: 322px
+}
+ 
+.game__words__content{
+ margin-top: 282px; 
+ display: flex;
+ justify-content: space-between;
+}
 
 
 
@@ -231,8 +244,24 @@
          margin-bottom: 64px;
 }
 
+
+.game__words__content {
+         margin-top: 51px;
+         margin-bottom: 85px;
+         display: flex;
+         flex-direction: column-reverse;
+         align-items: center;
+         text-align: center;
+         padding-left: 16px;
+         padding-right: 16px;
 }
 
+.img__game__words{
+         width: 344px;
+         height: 231px;
+}
+
+}
 
 @media (min-width:758px) and  (max-width:833px){
 
@@ -245,6 +274,10 @@
          text-align: center;
          padding-top: 239px;
 
+}
+
+.game__words__content{
+         margin-top: 29px;
 }
 
 }
