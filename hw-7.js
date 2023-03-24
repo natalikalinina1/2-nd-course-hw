@@ -36,8 +36,8 @@ function randomInteger(min, max) {
 
 //Задание 6 
 let ywe = Number(prompt ('Введите число'));
-function getRandomArrNumbers (lenght = Math.floor(ywe/2)) {
-  return Array.from(Array(lenght),() => Math.floor(Math.random()*ywe)+1);
+function getRandomArrNumbers (length = Math.floor(ywe/2)) {
+  return Array.from(Array(length),() => Math.floor(Math.random()*ywe)+1);
 }
 const randomarr = getRandomArrNumbers();
 console.log(randomarr);
