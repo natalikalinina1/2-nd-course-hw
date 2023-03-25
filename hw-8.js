@@ -14,8 +14,7 @@ function mult(elem1, elem2) {
 getResult ([3, 4, 1, 9], mult); 
 getResult ([3, 4, 1, 9], sum); 
 
-
-//Заданиe 2:
+//Задание2:
 const users = [
 	{name: 'Jon', age: 22},
 	{name: 'Richard', age: 18},
@@ -68,6 +67,50 @@ setTimeout(() => {
 clearInterval(idInterval);
 	console.log ('30 секунд прошло ');
 }, 30000);
+function each(arr, callback) {
+	let result = [];
+	
+	for (let elem of arr) {
+		result.push( callback(elem) ); 
+	}
+	
+	return result;
+}
+
+let result1 = each([1, '4', 9, 7], function(num) {
+	return num ** 2;
+});
+
+console.log(result1);
+
+let result2 = each([1, '4', 9, 'two'], function(num) {
+	let line = [1, '4', 9, 'two']; 
+    line = line.reverse();
+	return num = line;
+});
+console.log(result2);
+
+let result3 = each( [1, '1', false, 9, 'two'],function(num){
+	let myMass = [1, '4', false, 9,
+
+	
+//Задание 4:
+
+const timer = (dedline) => {
+let time = dedline;
+console.log (new Date());
+const idInterval = setInterval(() => {
+	time -= 1;
+	console.log (new Date());
+},3000);
+
+setTimeout(() => {
+clearInterval(idInterval);
+	console.log ('30 секунд прошло ');
+}, 30000 * dedline);
+};
+timer(1);
+
 
 //Задание 5:
 function calling() {
@@ -87,5 +130,4 @@ function talk() {
 calling();
 beeps();
 talk();
-
 
