@@ -61,6 +61,7 @@ each(qwert, toNumberArr);
 
 
 //Задание 4:
+
 const idInterval = setInterval(() => {
 	console.log (new Date());
 },3000);
