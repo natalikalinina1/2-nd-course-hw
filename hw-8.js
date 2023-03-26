@@ -67,19 +67,22 @@ clearInterval(idInterval);
  
 //Задание 5:
 function calling() {
-    console.log('Звоню!')
+    console.log('Звоню!');
 };
  
-function beeps() {
+function beeps(callback) {
     setTimeout(() => {
-     console.log('Разговор')
+     console.log('Идут гудки');
+     callback();
     }, 1000);
 }
  
 function talk() {
-    console.log('Идут гудки...')
+    setTimeout(() => {
+        console.log('Разговор')
+    },500 );  
 }
  
 calling();
-beeps();
-talk();
+beeps(talk);
+
