@@ -32,26 +32,24 @@ console.log (users);
  
 //Задание 3:
  
-const each = (arr, callback) => {
-    result = arr;
-    callback();
+each = (arr, callback) => {
+    callback(arr);
 }
 const qwadr = [1, 4, 9, 7];
-const qwadrRes = () => {
-    result = result.map(item => item ** 2);
-    console.log(result);
+const qwadrRes = (arr) => {
+   
+    console.log(arr.map(item => item ** 2));
 }
   
 const qwert = [1, '4', false, 9, 'two'];
-const reversArr = () => { 
-    result = result.reverse();
-    console.log(result);
+const reversArr = (arr) => { 
+
+    console.log(arr.reverse());
 }
 const array = [1, '4', 9, 'two'];
-const toNumberArr = () => {
-    result = result.map(item =>(Number(item)));
-    result = result.filter(item => item >= 0); 
-    console.log(result);
+const toNumberArr = (arr) => {
+    arr = arr.map(item =>(Number(item)));
+    console.log(arr.filter(item => item >= 0));
 }
 each(qwadr,qwadrRes);
 each(array, reversArr); 
