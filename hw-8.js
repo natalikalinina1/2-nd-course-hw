@@ -78,9 +78,9 @@ function beeps(callback) {
 }
  
 function talk() {
-    setTimeout(() => {
+   
         console.log('Разговор')
-    },500 );  
+    
 }
  
 calling();
