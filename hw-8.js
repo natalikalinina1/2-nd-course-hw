@@ -51,6 +51,7 @@ const toNumberArr = (arr) => {
     arr = arr.map(item =>(Number(item)));
     console.log(arr.filter(item => item >= 0));
 }
+// либо :console.log(arr.filter(item => !isNaN(item)));
 each(qwadr,qwadrRes);
 each(array, reversArr); 
 each(qwert, toNumberArr);
